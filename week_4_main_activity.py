@@ -65,11 +65,51 @@ print(text[0:11])
 # "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
 
 ##################################### String Methods#################################
+
 # String Methods Practice #1
 #slieds 12 -16
 # Print the following text in uppercase, using the specific string method:
 # "Especially in electronic communications, writing in all caps is equivalent to yelling."
 # sentence = "Especially in electronic communications, writing in all caps is equivalent to yelling."
+sentence = " Especially in electronic communications, writing in all caps is equivalent to yelling."
+print(sentence.upper())
+print(sentence.lower())
+
+sentence2 = "ESPN IS THE BEST SPORTS NETWORK"
+print(sentence2.lower())
+print(sentence.find("communications"))
+print(sentence.replace("communications", "communications".upper()))
+print(sentence.replace("electronic", "electronic".upper()))
+print(sentence.replace("equivalent", "equal".lower()))
+new_sentence = "if the implementation is hard to explain, it might be a bad idea"
+print(new_sentence.replace("hard", "easy".lower()))
+print(new_sentence.replace("bad", "good".lower()))
+modified_sentence = new_sentence.replace("hard", "easy").replace("bad", "good")
+print(modified_sentence)
+
+#join method
+word_list = ["Simple", "is", "better", "than", "complex"]
+print(word_list)
+joined_sentence = " ".join(word_list)
+print(joined_sentence)
+new_word_list = ["apple", "banana", "mango", "cherry", "watermelon"]
+new_joined_sentence = " ".join(new_word_list)
+print(new_joined_sentence)
+
+sentence4 = "I am a python programmer"
+print(sentence4.split())
+print(sentence4.split(","))
+print(sentence4.split("p"))
+result = "repitition" * 150
+print(result)
+first_paragraph = "The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."
+print(first_paragraph.replace("people", "citizens").replace(" ", "").replace(",", "⚽"))
+
+
+
+
+
+
 
 # String Methods Practice #2
 # Join the following list into a string, separating each item with a space. Use the appropriate list/string method, and display the result.
